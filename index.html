@@ -228,8 +228,7 @@
             Dexterous robot hands offer rich opportunities for multifunctional manipulation, 
             where a robot must execute multiple skills in sequence while maintaining control 
             over previously grasped objects. Most prior work in dexterous manipulation focuses 
-            on single-object, single-skill tasks. % or assumes that intermediate states 
-            between skills need only be stable, rather than deliberately diverse. 
+            on single-object, single-skill tasks.
           </p>
           <p>
             In contrast, our insight is that many sequential tasks require resource-aware grasps 
@@ -238,11 +237,9 @@
             then performs a second, distinct manipulation subtask while preserving the initial grasp. 
           </p>
           <p>
-            We introduce HANDFUL, a learning framework that 
-            models finger usage as a limited resource and encourages exploration of resource-aware 
-            intermediate grasp states through finger-level contact rewards. % divexplicitly 
-            encourages exploration of diverse intermediate grasp states through finger-level contact 
-            rewards, followed by backward fine-tuning to specialize these states for downstream tasks.
+            We introduce HANDFUL, a learning framework that models finger usage as a limited resource 
+            and encourages exploration of resource-aware intermediate grasp states through finger-level 
+            contact rewards.
             These grasps are subsequently specialized for downstream tasks via curriculum-based 
             policy learning. We further propose HANDFUL-Bench, a simulation benchmark that 
             introduces sequential dexterous manipulation tasks across multiple second-subtask 
